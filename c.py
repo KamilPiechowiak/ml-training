@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import os
 
 def load_data():
-    (train_images, _), (_, _) = tf.keras.datasets.fashion_mnist.load_data()
+    (train_images, _), (_, _) = tf.keras.datasets.mnist.load_data()
     train_images=train_images[:10000]
     mi = np.mean(train_images)
     sigma = np.std(train_images)
